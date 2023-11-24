@@ -3,12 +3,12 @@ import { Carousel } from 'react-bootstrap';
 
 function CarouselSlide(){
 
-    const image1 = require('../../Assets/Carousel/Carousel1.jpeg');
-    const image2 = require('../../Assets/Carousel/carousel2.jpg');
-    const image3 = require('../../Assets/Carousel/carousel3.jpg');
-    const image4 = require('../../Assets/Carousel/carousel4.jpg');
-    const image5 = require('../../Assets/Carousel/carousel5.jpg');
-    const image7 = require('../../Assets/Carousel/carousel7.jpg');
+    const image1 = require('../../Assets/Carousel/Carousel1.jpg');
+    const image2 = require('../../Assets/Carousel/Carousel2.jpg');
+    const image3 = require('../../Assets/Carousel/Carousel3.jpg');
+    const image4 = require('../../Assets/Carousel/Carousel4.jpg');
+    const image5 = require('../../Assets/Carousel/Carousel5.jpg');
+    const image7 = require('../../Assets/Carousel/Carousel7.jpg');
     
   return (
     <Carousel fade>
