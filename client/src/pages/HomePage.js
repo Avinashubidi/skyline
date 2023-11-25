@@ -9,7 +9,6 @@ import Layout from "./../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import ProductCard from "../components/ProductCard";
 import CarouselSlide from "../components/a_component/CarouselSlide";
-import ProductSlide from "../components/a_component/ProductSlide";
 import "../styles/Homepage.css";
 
 const HomePage = () => {
@@ -175,9 +174,7 @@ const HomePage = () => {
             )}
           </div>
         </div>
-        <div>
-          <ProductSlide />
-        </div>
+       
         <div className="description">
           <br/><h6><strong>Skyline.com: Your Ultimate Shopping Destination</strong></h6>
 <p>E-commerce is transforming the way we shop, and at Skyline.com, we're here to revolutionize your shopping experience. Why waste time hopping from one store to another in search of the latest products when you can find everything you need with a simple click? Skyline.com offers a diverse and extensive range of products to cater to all your needs and desires.</p>

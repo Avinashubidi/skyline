@@ -33,10 +33,10 @@ const Footer = () => {
           <div className="col-sm"></div>
           <div className="col-sm"></div>
           <div className="col-sm">
-            <Link to="/instagram"><img src={instagram} alt="Instagram" /></Link>
-            <Link to="/youtube"><img src={youtube} alt="YouTube" /></Link>
-            <Link to="https://github.com/rajendrareang/skyline"><img src={github} alt="GitHub" /></Link>
-            <Link to="/twitter"><img src={twitter} alt="twitter" /></Link>
+            <a href="#"><img src={instagram} alt="Instagram" /></a>
+            <a href="#"><img src={youtube} alt="YouTube" /></a>
+            <a href="https://github.com/rajendrareang/skyline"><img src={github} alt="GitHub" /></a>
+            <a href="#"><img src={twitter} alt="twitter" /></a>
           </div>
         </div>
       </section>

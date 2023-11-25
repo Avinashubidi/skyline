@@ -6,7 +6,6 @@ import axios from "axios";
 import Layout from "./../components/Layout/Layout";
 import CarouselSlide2 from "../components/a_component/CarouselSlide2";
 import CategoryCard from "../components/CategoryCard";
-import ProductSlide from "../components/a_component/ProductSlide";
 import "../styles/TrendsPage.css";
 
 const Trends = () => {
