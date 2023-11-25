@@ -8,8 +8,8 @@ const Search = () => {
 
   return (
     <Layout title={"Search results | Skyline.com Buy Products Online"}>
-      <div className="container">
-        <div className="col-md-3 ">
+      <div className="container ">
+        <div className="col-md-12">
           <h1>Search Results</h1>
           <h6>
             {values?.results.length < 1

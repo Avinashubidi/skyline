@@ -200,23 +200,7 @@ const UpdateProduct = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
-              <div className="mb-3">
-                <Select
-                  bordered={false}
-                  placeholder="Select Gender"
-                  size="large"
-                  showSearch
-                  className="form-select mb-3"
-                  onChange={(value) => {
-                    setGender(value);
-                  }}
-                  value={gender}
-                >
-                  <Option value="unisex">Unisex</Option>
-                  <Option value="men">Men</Option>
-                  <Option value="women">Women</Option>
-                </Select>
-              </div>
+          
               
               <div className="mb-3">
                 <Select

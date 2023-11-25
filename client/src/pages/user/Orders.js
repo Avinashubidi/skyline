@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import UserMenu from "../../components/Layout/UserMenu";
 import Layout from "./../../components/Layout/Layout";
+import "../../styles/Card.css";
 import axios from "axios";
 import { useAuth } from "../../context/auth";
 import moment from "moment";
@@ -24,11 +25,11 @@ const Orders = () => {
     <Layout title={"Your Orders"}>
       <div className="container-flui p-3 m-3 dashboard">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-2">
             <UserMenu />
           </div>
-          <div className="col-md-9">
-            <h1 className="text-center">All Orders</h1>
+          <div className="col-md-8">
+            <h1 className="text-center"><b>All Orders</b></h1>
             {orders?.map((o, i) => {
               return (
                 <div className="border shadow">
@@ -63,13 +64,17 @@ const Orders = () => {
                             className="card-img-top"
                             alt={p.name}
                             width="100px"
-                            height={"100px"}
+                            height={"250px"}
                           />
                         </div>
                         <div className="col-md-8">
-                          <p>{p.name}</p>
+                          <h5><b>{p.name}</b></h5>
                           <p>{p.description.substring(0, 30)}</p>
-                          <p>Price : {p.price}</p>
+                          <h6 className="card-price">MRP: {p.price.toLocaleString("en-IN", {
+                            style: "currency",
+                            currency: "INR",
+                          })}
+                          </h6>
                         </div>
                       </div>
                     ))}

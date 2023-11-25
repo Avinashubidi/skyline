@@ -25,12 +25,12 @@ const Products = () => {
   return (
     <Layout>
        <div className="container-fluid m-3 p-3 dashboard">
-      <div className="row dashboard">
+      <div className="row ">
         <div className="col-md-2">
           <AdminMenu />
         </div>
-        <div className="col-md-10 ">
-          <h1 className="text-center">All Products List</h1>
+        <div className="col-md-8 ">
+          <h1 className="text-center"><b>All Products List</b></h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
               <Link

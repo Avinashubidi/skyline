@@ -73,8 +73,8 @@ const CreateProduct = () => {
           <div className="col-md-2">
             <AdminMenu />
           </div>
-          <div className="col-md-10">
-            <h1>Create Product</h1>
+          <div className="col-md-8">
+            <h1><b>Create Product</b></h1>
             <div className="m-1 w-75">
               <Select
                 bordered={false}
@@ -153,21 +153,7 @@ const CreateProduct = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
-              <div className="mb-3">
-  <Select
-    bordered={false}
-    placeholder="Select Gender"
-    size="large"
-    className="form-select mb-3"
-    onChange={(value) => {
-      setGender(value);
-    }}
-  >
-    <Option value="unisex">Unisex</Option>
-    <Option value="men">Men</Option>
-    <Option value="women">Women</Option>
-  </Select>
-</div>
+             
 
               <div className="mb-3">
                 <Select
