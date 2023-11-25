@@ -31,10 +31,6 @@ const productSchema = new mongoose.Schema(
       data: Buffer,
       contentType: String,
     },
-    gender: {
-      type: String, 
-      enum: ["unisex", "men", "women"],
-    },
     shipping: {
       type: Boolean,
     },
@@ -42,4 +38,4 @@ const productSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("NewProducts", productSchema);
+export default mongoose.model("products", productSchema);
