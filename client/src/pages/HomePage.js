@@ -139,7 +139,7 @@ const HomePage = () => {
           </div>
           <div className="d-flex flex-column">
             <button
-              className="btn btn-danger"
+              className="btn btn-dark"
               onClick={() => window.location.reload()}
             >
               RESET FILTERS
@@ -147,7 +147,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-md-10 ">
-          <h1 className="text-center">All Products</h1>
+          <h1 className="text-center"></h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
          <ProductCard key={p._id} product={p} />

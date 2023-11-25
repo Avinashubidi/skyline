@@ -57,16 +57,15 @@ const ProductDetails = () => {
         <div className="col-md-1"></div>
 
         <div className="col-md-4 product-details-info">
-          <h1 className="text-center">Product Details</h1>
+          <h1 className="text-center"><b>Product Details</b></h1>
           <hr />
-          <h4>{product.name}</h4>
+          <h4><b>{product.name}</b></h4>
           <h6>{product.description}</h6>
-          <h5><strong>
+          <h5 className="card-title card-price">
             MRP: {product?.price?.toLocaleString("en-IN", {
               style: "currency",
               currency: "INR",
             })}
-          </strong>
           </h5>
 
           {/* <h6>Category : {product?.category?.name}</h6> */}

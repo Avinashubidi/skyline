@@ -1,11 +1,11 @@
+import CarouselSlide2 from "../components/a_component/CarouselSlide2";
+import CategoryCard from "../components/CategoryCard";
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/cart";
 import axios from "axios";
 import Layout from "./../components/Layout/Layout";
-import CarouselSlide2 from "../components/a_component/CarouselSlide2";
-import CategoryCard from "../components/CategoryCard";
 import "../styles/TrendsPage.css";
 
 const Trends = () => {
