@@ -17,6 +17,8 @@ const CreateProduct = () => {
   const [quantity, setQuantity] = useState("");
   const [shipping, setShipping] = useState("");
   const [photo, setPhoto] = useState("");
+  const [gender, setGender] = useState("");
+
 
   //get all category
   const getAllCategory = async () => {
@@ -46,6 +48,8 @@ const CreateProduct = () => {
       productData.append("quantity", quantity);
       productData.append("photo", photo);
       productData.append("category", category);
+      productData.append("gender", gender);
+
       const { data } = axios.post(
         "/api/v1/product/create-product",
         productData
@@ -66,10 +70,10 @@ const CreateProduct = () => {
     <Layout title={"Dashboard - Create Product"}>
       <div className="container-fluid m-3 p-3 dashboard">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-2">
             <AdminMenu />
           </div>
-          <div className="col-md-9">
+          <div className="col-md-10">
             <h1>Create Product</h1>
             <div className="m-1 w-75">
               <Select
@@ -149,6 +153,22 @@ const CreateProduct = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
+              <div className="mb-3">
+  <Select
+    bordered={false}
+    placeholder="Select Gender"
+    size="large"
+    className="form-select mb-3"
+    onChange={(value) => {
+      setGender(value);
+    }}
+  >
+    <Option value="unisex">Unisex</Option>
+    <Option value="men">Men</Option>
+    <Option value="women">Women</Option>
+  </Select>
+</div>
+
               <div className="mb-3">
                 <Select
                   bordered={false}

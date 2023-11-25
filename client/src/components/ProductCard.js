@@ -1,5 +1,3 @@
-// ProductCard.js
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/cart";
@@ -16,7 +14,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="card m-2" key={product._id}>
+    <div className="card m-2 product-card" key={product._id}>
       <img
         src={`/api/v1/product/product-photo/${product._id}`}
         className="card-img-top"

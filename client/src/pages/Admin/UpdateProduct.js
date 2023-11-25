@@ -18,6 +18,7 @@ const UpdateProduct = () => {
   const [quantity, setQuantity] = useState("");
   const [shipping, setShipping] = useState("");
   const [photo, setPhoto] = useState("");
+  const [gender, setGender] = useState("");
   const [id, setId] = useState("");
 
   //get single product
@@ -34,6 +35,7 @@ const UpdateProduct = () => {
       setQuantity(data.product.quantity);
       setShipping(data.product.shipping);
       setCategory(data.product.category._id);
+      setGender(data.product.gender);
     } catch (error) {
       console.log(error);
     }
@@ -198,6 +200,24 @@ const UpdateProduct = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
+              <div className="mb-3">
+                <Select
+                  bordered={false}
+                  placeholder="Select Gender"
+                  size="large"
+                  showSearch
+                  className="form-select mb-3"
+                  onChange={(value) => {
+                    setGender(value);
+                  }}
+                  value={gender}
+                >
+                  <Option value="unisex">Unisex</Option>
+                  <Option value="men">Men</Option>
+                  <Option value="women">Women</Option>
+                </Select>
+              </div>
+              
               <div className="mb-3">
                 <Select
                   bordered={false}
